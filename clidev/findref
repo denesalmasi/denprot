@@ -1,4 +1,22 @@
 #!/bin/bash
+
+# Copyright Denes Almasi, Hungary, 2011
+
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see 
+#    <http://www.gnu.org/licenses/>.
+
+# Print usage if there aren't exactly three arguments
 if [[ $# -ne 3 ]]; then
 	echo "Too few arguments."
 	echo "Usage:"
@@ -6,12 +24,19 @@ if [[ $# -ne 3 ]]; then
 	exit
 fi
 
+# Get a list of files tailored by our second parameter (a regexp)
 LST=`find $1 | egrep $2`;
 for Q in $LST; do
+	# I know, this is expensive,
+	# but the main goal for this was to work...
+	# (egrep is ran for 2 times)
 	R=`egrep -ci $3 $Q`
+	# If there are regexp matches, it elaborates
 	if [[ $R -ne 0 ]]; then
 		echo ----
+		# Filename
 		echo $Q ::;
+		# Matches in the file
 		egrep -ni $3 $Q
 	fi
 done; 
