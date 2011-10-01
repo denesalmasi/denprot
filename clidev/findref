@@ -1,0 +1,17 @@
+#!/bin/bash
+if [[ $# -ne 3 ]]; then
+	echo "Too few arguments."
+	echo "Usage:"
+	echo "	findref directory filenameRegExp contentRegExp"
+	exit
+fi
+
+LST=`find $1 | egrep $2`;
+for Q in $LST; do
+	R=`egrep -ci $3 $Q`
+	if [[ $R -ne 0 ]]; then
+		echo ----
+		echo $Q ::;
+		egrep -ni $3 $Q
+	fi
+done; 
