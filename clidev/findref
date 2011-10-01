@@ -16,8 +16,26 @@
 #    along with this program.  If not, see 
 #    <http://www.gnu.org/licenses/>.
 
+# ----------------
+# A TOOL FOR FINDING OCCURENCES OF A REGEXP IN FILES OF A DIRECTORY,
+# RECURSIVELY.
+# 
+# Filenames are also filtered by a regular expression.
+# ----------------
+
+HELP="findref - a tool for finding occurences of a regular expression in files of a directory, recursively."
+
+# React on -h parameter
+if [[ $# -eq 1 ]]; then
+	if [[ $1 == "-h" ]]; then
+		echo $HELP;
+	fi
+	exit
+fi
+
 # Print usage if there aren't exactly three arguments
 if [[ $# -ne 3 ]]; then
+	echo $HELP
 	echo "Too few arguments."
 	echo "Usage:"
 	echo "	findref directory filenameRegExp contentRegExp"
