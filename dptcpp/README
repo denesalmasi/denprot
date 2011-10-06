@@ -1,0 +1,30 @@
+
+# Denes Almasi, Hungary, 2011
+
+# Copying and distribution of this file, with or without modification,
+# are permitted in any medium without royalty provided the copyright
+# notice and this notice are preserved.  This file is offered as-is,
+# without any warranty.
+
+This is an all-in-one C++ library serving simple solutions for simple yet common problems.
+
+The library is for GNU/Linux.
+
+Features include:
+	- An exception-safe exception class capable of carrying a message and a position in code.
+	  It is easy to inherit from this class and extend its capabilities.
+	  
+	- A group of simple debug macros either using domains that can be turned on or off
+	  or simple macros that always write to the error stream. operator<< can be used
+	  inside the macros to concatenate various informations of different types into one
+	  message. Code position is also written to stderr. 
+	  If the linked software is not compiled with -DDEBUG, the macros won't cause
+	  any overhead: they simple disappear from the source.
+	  
+	- An interface for uniquely identifiable objects and a generic class for uniquely
+	  identifiable types. (with which the template is instantiated)
+	  
+	  
+	  
+include with: #include <dptcpp-0.1/dptcpp/dptcpp.h>
+link with (g++): -ldptcpp-0.1

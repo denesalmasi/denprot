@@ -1,0 +1,8 @@
+Id.lo: Id.cpp ../inc/dptcpp/ClassIdCounter.h ../inc/dptcpp/IdTypes.h \
+ ../inc/dptcpp/Identifiable.h
+
+../inc/dptcpp/ClassIdCounter.h:
+
+../inc/dptcpp/IdTypes.h:
+
+../inc/dptcpp/Identifiable.h:

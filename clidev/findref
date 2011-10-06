@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright Denes Almasi, Hungary, 2011
+# Denes Almasi, Hungary, 2011
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -24,11 +24,18 @@
 # ----------------
 
 HELP="findref - a tool for finding occurences of a regular expression in files of a directory, recursively."
+BADARGCNT="[Too few arguments.]"
+USAGE="Usage:
+	findref directory fileRegExp contentRegExp"
 
 # React on -h parameter
 if [[ $# -eq 1 ]]; then
 	if [[ $1 == "-h" ]]; then
 		echo $HELP;
+	else
+		echo $HELP;
+		echo $BADARGCNT;
+		echo $USAGE;
 	fi
 	exit
 fi
@@ -36,9 +43,8 @@ fi
 # Print usage if there aren't exactly three arguments
 if [[ $# -ne 3 ]]; then
 	echo $HELP
-	echo "Too few arguments."
-	echo "Usage:"
-	echo "	findref directory filenameRegExp contentRegExp"
+	echo $BADARGCNT
+	echo $USAGE
 	exit
 fi
 
