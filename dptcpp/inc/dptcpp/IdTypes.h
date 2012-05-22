@@ -19,8 +19,8 @@
  * \file Identity.h Common header including all the identitity-related headers.
  * \author Dénes Almási
  */
-#ifndef CLASSIDTYPES_H
-#define CLASSIDTYPES_H
+#ifndef DPTCPP_CLASSIDTYPES_H
+#define DPTCPP_CLASSIDTYPES_H
 
 namespace denprot {
 	/**

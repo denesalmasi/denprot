@@ -19,8 +19,8 @@
  * \file Identity.h Common header including all the identitity-related headers.
  * \author Dénes Almási
  */
-#ifndef CLASSID_H
-#define CLASSID_H
+#ifndef DPTCPP_CLASSID_H
+#define DPTCPP_CLASSID_H
 
 #include "IdTypes.h"
 #include "Identifiable.h"

@@ -1,6 +1,27 @@
 /* config.h.  Generated from config.h.in by configure.  */
 /* config.h.in.  Generated from configure.ac by autoheader.  */
 
+/* Defined if the requested minimum BOOST version is satisfied */
+#define HAVE_BOOST 1
+
+/* Define to 1 if you have <boost/asio.hpp> */
+#define HAVE_BOOST_ASIO_HPP 1
+
+/* Define to 1 if you have <boost/function.hpp> */
+#define HAVE_BOOST_FUNCTION_HPP 1
+
+/* Define to 1 if you have <boost/signal.hpp> */
+#define HAVE_BOOST_SIGNAL_HPP 1
+
+/* Define to 1 if you have <boost/system/error_code.hpp> */
+#define HAVE_BOOST_SYSTEM_ERROR_CODE_HPP 1
+
+/* Define to 1 if you have <boost/thread.hpp> */
+#define HAVE_BOOST_THREAD_HPP 1
+
+/* Define to 1 if you have <boost/tokenizer.hpp> */
+#define HAVE_BOOST_TOKENIZER_HPP 1
+
 /* Define to 1 if you have the <dlfcn.h> header file. */
 #define HAVE_DLFCN_H 1
 

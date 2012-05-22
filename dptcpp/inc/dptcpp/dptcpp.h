@@ -21,5 +21,6 @@
 #include "Exception.h"
 #include "Debug.h"
 #include "Identity.h"
+#include "Config.h"
 
 #endif

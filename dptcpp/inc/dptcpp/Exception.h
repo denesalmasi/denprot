@@ -20,8 +20,8 @@
  * \author Dénes Almási
  */
 
-#ifndef EXCEPTION_H
-#define EXCEPTION_H
+#ifndef DPTCPP_EXCEPTION_H
+#define DPTCPP_EXCEPTION_H
 
 /**
  * A macro that simlifies passing the code position to an exception when constructing it.

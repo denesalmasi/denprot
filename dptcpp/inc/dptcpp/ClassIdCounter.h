@@ -20,8 +20,8 @@
  * \author Dénes Almási
  */
  
-#ifndef CLASSIDCOUNTER_H
-#define CLASSIDCOUNTER_H
+#ifndef DPTCPP_CLASSIDCOUNTER_H
+#define DPTCPP_CLASSIDCOUNTER_H
 
 #include "IdTypes.h"
 

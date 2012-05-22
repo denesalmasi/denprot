@@ -19,8 +19,8 @@
  * \file Identifiable.h Header containing the declaration of the Identifiable class.
  * \author Dénes Almási
  */
-#ifndef IDENTIFIABLE_H
-#define IDENTIFIABLE_H
+#ifndef DPTCPP_IDENTIFIABLE_H
+#define DPTCPP_IDENTIFIABLE_H
 
 #include "IdTypes.h"
 

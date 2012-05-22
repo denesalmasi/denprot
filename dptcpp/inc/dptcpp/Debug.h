@@ -19,8 +19,8 @@
  * \file Debug.h Header containing the declaration of various debugging macros.
  * \author Dénes Almási
  */
-#ifndef CLONEEXTRACT_DEBUG_H
-#define CLONEEXTRACT_DEBUG_H
+#ifndef DPTCPP_DEBUG_H
+#define DPTCPP_DEBUG_H
 
 #include <map>
 #include <string>
